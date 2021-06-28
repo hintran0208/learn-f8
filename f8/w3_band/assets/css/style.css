@@ -19,6 +19,7 @@ html {
   right: 0;
   height: 46px;
   background-color: #000;
+  z-index: 1;
 }
 
 #nav {
@@ -102,9 +103,29 @@ html {
 }
 
 #slider {
+  position: relative;
   margin-top: 46px;
-  min-height: 500px;
-  background-color: #333;
+  padding-top: 50%;
+  background: url("/assets/img/slider/slider_1.jpg") top center / cover
+    no-repeat;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 47px;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+#slider .text-heading {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+#slider .text-description {
+  margin-top: 25px;
+  font-size: 15px;
 }
 
 #content {
