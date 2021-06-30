@@ -9,6 +9,7 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Common */
 .clear {
   clear: both;
 }
@@ -17,6 +18,48 @@ html {
   color: #fff !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
+.mt-8 {
+  margin-top: 8px !important;
+}
+
+.mt-16 {
+  margin-top: 16px !important;
+}
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.row::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.col {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-full {
+  width: 100%;
+}
+
+.col-half {
+  width: 50%;
+}
+
+.col-third {
+  width: 33.33333%;
+}
+
+/* Main */
 #main {
 }
 
@@ -171,13 +214,6 @@ html {
   margin-top: 48px;
 }
 
-#content .member-item {
-  float: left;
-  /* width: calc(100% / 3); */
-  width: 33.33333%;
-  text-align: center;
-}
-
 #content .member-name {
   font-size: 15px;
 }
@@ -227,14 +263,8 @@ html {
 
 /* Places */
 .places-list {
-  margin: 32px -8px 0;
-  padding-bottom: 48px;
-}
-
-.place-item {
-  float: left;
-  width: 33.33333%;
-  padding: 0 8px;
+  margin-top: 32px;
+  margin-bottom: 48;
 }
 
 .place-img {
@@ -281,6 +311,46 @@ html {
   background-color: #ccc;
 }
 
+/* Contact Form */
+.contact-content {
+  margin-top: 48px;
+}
+
+.contact-info {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.contact-info i[class*="ti-"] {
+  width: 30px;
+  display: inline-block;
+}
+
+.contact-form {
+  font-size: 15px;
+}
+
+.contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.contact-form .form-submit-btn {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  padding: 10px 16px;
+  float: right;
+}
+
+.contact-form .form-submit-btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #757575;
+}
+
 /* Footer Section */
 #footer {
+  min-height: 500px;
 }
