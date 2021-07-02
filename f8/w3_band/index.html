@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Band</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
     <link
       rel="stylesheet"
       href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css"
@@ -21,7 +22,7 @@
           <li><a href="#tour">Tour</a></li>
           <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="">
+            <a href="#">
               More
               <i class="nav-arrow-down ti-angle-down"></i>
             </a>
@@ -37,6 +38,9 @@
         <!-- Begin: Search -->
         <div class="search-btn">
           <i class="search-icon ti-search"></i>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-btn">
+          <i class="menu-icon ti-menu"></i>
         </div>
         <!-- End: Search -->
       </div>
@@ -236,5 +240,29 @@
         <p class="copywrite">Power by <a href="w3.css">w3.css</a></p>
       </div>
     </div>
+
+    <script>
+      var header = document.getElementById("header");
+      var mobileMenu = document.getElementById("mobile-menu");
+      var headerHeight = header.clientHeight;
+      // Open Close Menu
+      mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === headerHeight;
+        if (isClosed) {
+          header.style.height = "auto";
+        } else {
+          header.style.height = null;
+        }
+      };
+
+      // Auto close menu after clicking
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (var i = 0; i < menuItems.length; i++) {
+        var menuItem = menuItems[i];
+        menuItem.onclick = function () {
+          header.style.height = null;
+        };
+      }
+    </script>
   </body>
 </html>
