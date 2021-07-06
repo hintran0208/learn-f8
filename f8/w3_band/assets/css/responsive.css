@@ -2,6 +2,38 @@
 @media (min-width: 1024px) {
 }
 
+/* Tablet & Mobile */
+@media (max-width: 1023px) {
+  #nav .subnav a {
+    padding: 5px 12px;
+  }
+
+  .btn {
+    padding: 15px 16px;
+  }
+
+  .contact-form .form-control {
+    padding: 15px;
+  }
+
+  .contact-info {
+    line-height: 2;
+  }
+
+  .social-list {
+    font-size: 48px;
+  }
+
+  #footer .social-list a {
+    padding: 0 8px;
+  }
+
+  #footer .copywrite a {
+    padding: 12px 0;
+    display: inline-block;
+  }
+}
+
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
 }
@@ -51,8 +83,8 @@
   }
 
   #nav .subnav a {
-    color: #fff;
     padding: 5px 41px;
+    color: #fff;
   }
 
   #content .member-img {
@@ -60,6 +92,6 @@
   }
 
   .contact-form {
-    margin-top: 16px;
+    margin-top: 32px;
   }
 }
