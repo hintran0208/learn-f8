@@ -5,16 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <div>
+    <!-- <div>
       <button class="btn btn--size-s btn--success btn--disabled">
         GO TO NEXT APPROVAL
       </button>
       <button class="btn btn--size-s btn--warning">OK</button>
       <button class="btn btn--size-s btn--danger">TRY AGAIN</button>
-    </div>
+    </div> -->
     <div>
       <button class="btn btn--success btn--disabled">
         GO TO NEXT APPROVAL
@@ -22,12 +29,32 @@
       <button class="btn btn--warning">OK</button>
       <button class="btn btn--danger">TRY AGAIN</button>
     </div>
-    <div>
+    <!-- <div>
       <button class="btn btn--size-l btn--success btn--disabled">
         GO TO NEXT APPROVAL
       </button>
       <button class="btn btn--size-l btn--warning">OK</button>
       <button class="btn btn--size-l btn--danger">TRY AGAIN</button>
+    </div> -->
+
+    <!-- Toast Message -->
+    <div id="toast">
+      <!-- Success -->
+      <div class="toast toast--success">
+        <div class="toast__icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <div class="toast__body">
+          <h3 class="toast__title">Success</h3>
+          <p class="toast__msg">
+            Hello, My name is Louis Tran, an IT student!!
+          </p>
+        </div>
+        <div class="toast__close">
+          <i class="fas fa-times"></i>
+        </div>
+      </div>
     </div>
+    <div></div>
   </body>
 </html>
