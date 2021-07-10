@@ -11,11 +11,13 @@
 .header__navbar-list {
   list-style: none;
   padding-left: 0;
+  margin-top: 4px;
 }
 
 .header__navbar-item {
   margin: 0 8px;
   position: relative;
+  min-height: 26px;
 }
 
 .header__navbar-item,
@@ -25,6 +27,20 @@
   color: var(--white-color);
   text-decoration: none;
   font-weight: 300;
+}
+.header__navbar-list,
+.header__navbar-item,
+.header__navbar-icon-link,
+.header__navbar-item-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header__navbar-item:hover,
+.header__navbar-icon-link:hover,
+.header__navbar-item-link:hover {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .header__navbar-item--bold {
@@ -40,4 +56,19 @@
   right: -9px;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.header__navbar-icon-link {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+.header__navbar-icon {
+  font-size: 1.8rem;
+  margin: 0 4px;
+}
+
+.header-navbar-title--no-pointer {
+  cursor: text;
+  color: var(--white-color);
 }
