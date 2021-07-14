@@ -119,6 +119,7 @@
   color: var(--white-color);
   text-decoration: none;
   font-weight: 300;
+  z-index: 1;
 }
 .header__navbar-list,
 .header__navbar-item,
