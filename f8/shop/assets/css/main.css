@@ -486,6 +486,15 @@
   margin: 0 8px;
 }
 
+.header__mobile-search {
+  padding: 0 12px;
+}
+
+.header__mobile-search-icon {
+  font-size: 2.6rem;
+  color: var(--white-color);
+}
+
 .header__logo {
   width: 200px;
 }
@@ -493,11 +502,17 @@
 .header__logo-link {
   text-decoration: none;
   color: transparent;
+  display: block;
+  line-height: 0;
 }
 
 .header__logo-img {
   width: 150px;
   color: var;
+}
+
+.header__search-checkbox:checked ~ .header__search {
+  display: flex;
 }
 
 .header__search {
@@ -878,7 +893,6 @@
   right: 0;
   height: var(--header-sort-bar-height);
   background-color: var(--white-color);
-  display: flex;
   list-style: none;
   margin: 0;
   padding-left: 0;
