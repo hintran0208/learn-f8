@@ -1055,6 +1055,8 @@
   border-radius: 4px;
   user-select: none;
   -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   padding: 0 6px;
 }
 
