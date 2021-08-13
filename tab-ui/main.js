@@ -15,13 +15,16 @@ tabs.forEach((tab, index) => {
 
     tab.onclick = function () {
 
-        $('.tab-item.active').classList.remove('active');
-        $('.tab-pane.active').classList.remove('active');
+        $('.tab-item.active').classList.remove('active')
+        $('.tab-pane.active').classList.remove('active')
 
         line.style.left = this.offsetLeft + 'px';
         line.style.width = this.offsetWidth + 'px';
 
         this.classList.add('active');
         pane.classList.add('active');
+
     }
-})
+}
+
+);
