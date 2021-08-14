@@ -59,7 +59,21 @@ const app = {
 
     },
 
+    handleEvents: function () {
+        const cd = $('.cd');
+        const cdWidth = cd.offsetWidth;
+        document.onscroll = function () {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            const newCdWidth = cdWidth - scrollTop;
+
+            cd.style.width = newCdWidth > 0 ? newCdWidth + 'px' : 0
+            cd.style.opacity = newCdWidth / cdWidth;
+        }
+    },
+
     start: function () {
+        this.handleEvents();
+
         this.render();
     }
 }
